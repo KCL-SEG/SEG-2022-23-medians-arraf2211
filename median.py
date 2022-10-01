@@ -1,5 +1,16 @@
 """Median calculator."""
 """ENTER YOUR SOLUTION HERE!"""
+def sort(number):
+        sortedlist = sorted(number)
+            x = len(sortedlist)
+                if (len(sortedlist)%2):
+                    median = sortedlist[int((x - 1) / 2)]
+                    print(median)
+                else:
+                    index = (x / 2)
+                    median = (sortedlist[int(index)-1] + sortedlist[int(index)]) /2
+                    print(median)
+
 
 while True:
     try:
@@ -10,3 +21,5 @@ while True:
     else:
         break
 print(numbers)
+sort(numbers)
+
